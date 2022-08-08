@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+.hero_section{
+    background: url(images/heroSectionBackground.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height: 60vh;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding:16px 48px;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+.navbar_menu_container{
+    display: flex;
+    gap: 20px;
+}
+.user_icon{
+    height: 30px;
+    width: 30px;
+    display: none;
+    align-items:center;
+    justify-content:center;
+    border-radius: 100%;
+    border: solid 1px white;
+}
+
+.hero_section_container{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    height: calc(60vh-60px);
+}
+.hero_section_logo{
+    width: 220px;
+    height: auto;
+}
+.hero_section_title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+}
+.hero_section_input_container{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10;
+    width: 50%;
+    border-radius: 10px;
+}
+.input_container_location,
+.input_container_search{
+   padding: 5px;
+   border: none;
+   outline: none;
+}
+.input_container_location{
+    width: 35%;
+    border-right: 2px solid #e0e0e0;
+}.input_container_search{
+    width: 65%;
+}
+
+
+
+
+
+
+@media only screen  and (max-width: 600px){
+    .navbar_menu_container .user_icon{
+        display: flex;
+    }
+    .navbar_menu_container .link{
+        display: none;
+    }
+    .navbar{
+        padding: 16px 16px;
+    }
+    .hero_section{
+        height: 80vh;
+    }
+    .hero_section_input_container{
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+        gap: 10px;
+    }
+    .input_container_location,
+    .input_container_search{
+        padding:15px ;
+        border-radius: 10px;
+        width: 95%;
+    }
+    .hero_section_container{
+        height: calc(80vh-60px);
+    }
+    .hero_section_title{
+        width: 95%;
+        font-size:20px ;
+    }
+}
