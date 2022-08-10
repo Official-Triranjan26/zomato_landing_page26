@@ -196,6 +196,56 @@
 
 
 
+.popular_locations h1{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    font-weight: 400;
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+}
+.popular_locations h1 span{
+    font-weight: 600;
+}
+.popular_locations_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    padding-bottom: 50px;
+}
+.popular_location_items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid rgb(201, 199, 199);
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px  2px rgb(201, 199, 199);
+}
+.popular_location_items_content h3{
+    font-weight: 400;
+}
+.popular_location_items_content h5{
+    font-weight: 300;
+}
+.popular_location_items_seemore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border: 1px solid rgb(201, 199, 199);
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px  2px rgb(201, 199, 199);
+}
+.popular_location_items_content_seemore h3{
+    font-weight: 400;
+}
+.popular_location_items_logo_seemore i{
+    padding-left: 20px;
+}
+
+
 
 .get_the_app{
     display: flex;
@@ -288,6 +338,36 @@
 }
 .download_app_container div img{
     width: 35%;
+}
+
+
+
+
+.explore_options h1{
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+.explore_dropdown_container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.explore_dropdown_container .explore_dropdown{
+    border: 1px solid rgb(225, 221, 221);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dropdown_content_header h3{
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+.dropdown_content_icon i{
+    padding-right: 20px;
 }
 
 
@@ -420,6 +500,28 @@
         font-size:20px ;
     }
 }
+
+
+@media only screen  and (max-width: 900px){
+    .popular_locations h1{
+        font-size: 20px;
+
+    }
+    .popular_locations_container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen  and (max-width: 400px){
+    .popular_locations_container{
+        grid-template-columns: 1fr;
+    }
+    .popular_location_items_content h3{
+        font-size: 15px;
+    }
+}
+
+
+
 @media only screen  and (max-width: 1300px){
     .get_the_app .semiContainer .right,
     .get_the_app .semiContainer .left{
@@ -446,6 +548,12 @@
         flex-direction: column;
     }
 }
+@media only screen  and (max-width: 400px){
+    .semiContainer .right h1{
+        font-size: 1rem;
+        letter-spacing: 0;
+    }
+}
 
 @media only screen  and (max-width: 900px){
     .navigation_container{
@@ -460,5 +568,11 @@
 @media only screen  and (max-width: 400px){
     .navigation_container{
         grid-template-columns: 1fr;
+    }
+}
+@media only screen  and (max-width: 400px){
+    .explore_options h1{
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem;
     }
 }
