@@ -197,6 +197,193 @@
 
 
 
+.get_the_app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,251,247);
+    width: 100%;
+    padding: 3rem 6rem;
+}
+.get_the_app .semiContainer{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.get_the_app .semiContainer .left{
+    flex:2
+}
+.get_the_app .semiContainer .left img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.get_the_app .semiContainer .right{
+    flex: 3;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    gap: 10px;
+    /* background-color: #ff7e8b; */
+}
+.get_the_app .semiContainer .right h1{
+    font-weight: 400;
+    font-size: 2rem;
+}
+.get_the_app .semiContainer .right p{
+    font-size: 0.8rem;
+}
+.get_the_app .semiContainer .right .radio_buttons_container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.get_the_app .semiContainer .right .radio_buttons_container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100x;
+}
+.get_the_app .semiContainer .right .radio_buttons_container div input{
+    height: 15px;
+    width: 15px;
+    accent-color:rgb(239,79,95) ;
+}
+.get_the_app .semiContainer .right .input_container{
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+.input_container button,
+.input_container input{
+    padding: 10px 12px;
+}
+.input_container input{
+    flex: auto;
+    border: 1,5px solid gray;
+    outline: none;
+    border-radius: 5px;
+}
+.input_container button{
+    border: none;
+    background-color: rgb(239, 79, 95);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.right .download_app_container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+.download_app_container h5{
+    font-weight: 400;
+    color: gray;
+}
+.download_app_container div{
+    display: flex;
+    gap: 1rem;
+}
+.download_app_container div img{
+    width: 35%;
+}
+
+
+
+
+.footer{
+    width: 100%;
+}
+.footer_section1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+.footer_section1 img{
+    width: 120px;
+}
+.section1_button_container{
+    display: flex;
+    gap: 1rem;
+}
+.section1_button_container button{
+    padding: 5px;
+    width: 90px;
+    border: 1px solid gray;
+    background-color: transparent;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.navigation_container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 90%;
+    margin: auto;
+    gap: 1rem;
+    padding: 3rem 0rem;
+}
+.link_container{
+    display: flex;
+    flex-direction: column;
+    gap: 5rpx;
+}
+.link_container h5{
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5px;
+    letter-spacing: 0.8px;
+}
+.link_container .footer_link{
+    text-decoration: none;
+    color: gray;
+    font-size: 13px;
+    font-weight: 300;
+}
+.link_container .footer_link:hover{
+    color: black;
+}
+.social_link_container{
+    display: flex;
+    gap:0.5rem ;
+}
+.social_link_container button{
+    background-color: black;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social_link_container i{
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+}
+.footer_section_logos{
+    width: 100%;
+}
+
+.disclamer{
+    width: 90%;
+    margin: auto;
+    color: gray;
+    font-size: 12px;
+    border-top: 1px solid gray;
+    padding-top: 1.5rem;
+}
+
 
 
 
@@ -231,5 +418,47 @@
     .hero_section_title{
         width: 95%;
         font-size:20px ;
+    }
+}
+@media only screen  and (max-width: 1300px){
+    .get_the_app .semiContainer .right,
+    .get_the_app .semiContainer .left{
+        flex: 1;
+    }
+    .get_the_app .semiContainer{
+        width: 80%;
+    }
+}
+@media only screen  and (max-width: 900px){
+    .get_the_app{
+        padding: 2rem;
+    }
+    .get_the_app .semiContainer{
+        width: 90%;
+    }
+}
+@media only screen  and (max-width: 700px){
+    .get_the_app{
+        padding: 3rem 0rem;
+    }
+    .get_the_app .semiContainer{
+        width: 80%;
+        flex-direction: column;
+    }
+}
+
+@media only screen  and (max-width: 900px){
+    .navigation_container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media only screen  and (max-width: 600px){
+    .navigation_container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen  and (max-width: 400px){
+    .navigation_container{
+        grid-template-columns: 1fr;
     }
 }
